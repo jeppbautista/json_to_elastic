@@ -1,0 +1,97 @@
+{
+  "took" : 1,
+  "timed_out" : false,
+  "_shards" : {
+    "total" : 1,
+    "successful" : 1,
+    "skipped" : 0,
+    "failed" : 0
+  },
+  "hits" : {
+    "total" : {
+      "value" : 4,
+      "relation" : "eq"
+    },
+    "max_score" : 1.0,
+    "hits" : [
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "space:default",
+        "_score" : 1.0,
+        "_source" : {
+          "space" : {
+            "name" : "Default",
+            "description" : "This is your default space!",
+            "color" : "#00bfb3",
+            "disabledFeatures" : [ ],
+            "_reserved" : true
+          },
+          "type" : "space",
+          "references" : [ ],
+          "migrationVersion" : {
+            "space" : "6.6.0"
+          },
+          "updated_at" : "2019-07-17T07:02:55.606Z"
+        }
+      },
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "config:7.2.0",
+        "_score" : 1.0,
+        "_source" : {
+          "config" : {
+            "buildNum" : 24337
+          },
+          "type" : "config",
+          "references" : [ ],
+          "updated_at" : "2019-07-17T07:02:56.682Z"
+        }
+      },
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "telemetry:telemetry",
+        "_score" : 1.0,
+        "_source" : {
+          "telemetry" : {
+            "enabled" : false
+          },
+          "type" : "telemetry",
+          "references" : [ ],
+          "updated_at" : "2019-07-17T07:10:37.209Z"
+        }
+      },
+      {
+        "_index" : ".kibana_1",
+        "_type" : "_doc",
+        "_id" : "maps-telemetry:maps-telemetry",
+        "_score" : 1.0,
+        "_source" : {
+          "maps-telemetry" : {
+            "mapsTotalCount" : 0,
+            "timeCaptured" : "2019-07-31T07:17:33.855Z",
+            "attributesPerMap" : {
+              "dataSourcesCount" : {
+                "min" : 0,
+                "max" : 0,
+                "avg" : 0
+              },
+              "layersCount" : {
+                "min" : 0,
+                "max" : 0,
+                "avg" : 0
+              },
+              "layerTypesCount" : { },
+              "emsVectorLayersCount" : { }
+            }
+          },
+          "type" : "maps-telemetry",
+          "references" : [ ],
+          "updated_at" : "2019-07-31T07:17:33.855Z"
+        }
+      }
+    ]
+  }
+}
